@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.jpg';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
   
-  const[menu,setmenu]=useState("clothing");
+  const[menu,setmenu]=useState("all");
 
   return (
     <div className='navbar'>
@@ -14,14 +15,14 @@ const Navbar = () => {
         <p>Dart-Mart</p>
       </div>
       <ul className='nav-menu'>
-        <li onClick={()=>{setmenu("clothing")}}>Clothing{menu==="clothing"?<hr/>:<></>}</li>
-        <li onClick={()=>{setmenu("mobiles")}}>Mobiles{menu==="mobiles"?<hr/>:<></>}</li>
-        <li onClick={()=>{setmenu("homea")}}>Home Appliances{menu==="homea"?<hr/>:<></>}</li>
-        <li onClick={()=>{setmenu("grocery")}}>Grocery{menu==="grocery"?<hr/>:<></>}</li>
+        <li onClick={()=>{setmenu("all")}}><Link style={{textDecoration:'none'}} to='/'>All Products</Link>{menu==="all"?<hr/>:<></>}</li>
+        <li onClick={()=>{setmenu("clothing")}}><Link style={{textDecoration:'none'}} to='/clothing'>Clothing</Link>{menu==="clothing"?<hr/>:<></>}</li>
+        <li onClick={()=>{setmenu("mobiles")}}><Link style={{textDecoration:'none'}} to='/mobiles'>Mobiles</Link>{menu==="mobiles"?<hr/>:<></>}</li>
+        <li onClick={()=>{setmenu("grocery")}}><Link style={{textDecoration:'none'}} to='/grocery'>Grocery</Link>{menu==="grocery"?<hr/>:<></>}</li>
       </ul>
       <div className='nav-login-cart'>
-        <button>Login</button>
-        <img className='nav-img' src={logo} alt='' />
+        <Link to='/login'><button>Login</button></Link>
+        <Link to='/cart'><img className='nav-img' src={logo} alt='' /></Link>
         <div className="nav-cart-count">1</div>
       </div>
     </div>

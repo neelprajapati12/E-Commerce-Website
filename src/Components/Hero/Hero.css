@@ -1,0 +1,48 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(rgb(168, 221, 241),white);
+}
+
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 100px;
+}
+.hero-left h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-left p{
+    font-size: 100px;
+    font-weight: 600;
+}
+.browse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    gap: 20px;
+}
+.browse img{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
