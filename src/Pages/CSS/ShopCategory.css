@@ -1,12 +1,44 @@
 .banner-img{
     display: block;
     margin:30px auto;
-    width: 80%;
+    width: 85%;
     height: 400px;
 }
 .shopcat-indexsort{
     display: flex;
-    margin: 0px 170px;
+    margin: 0px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcat-sort{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    justify-content: center;
+}
+.dropdown_img{
+    width: 10px;
+    height: 10px;
+}
+.shopcat-indexsort p span{
+    font-weight: 600;
+}
+.shopcat-products{
+    padding: 10px;
+    margin: 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 60px;
+}
+.shopcat-loadmore{
+    display: flex;
+    margin: auto auto 100px;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 80px;
+    background-color: rgb(192, 189, 189);
+    font-size: 18px;
+    font-weight: 600;
 }

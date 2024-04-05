@@ -6,6 +6,7 @@ const Items = (props) => {
   return (
     <div className='item'>
       <img src={props.image} alt=""/>
+      <hr/>
       <p>{props.name}</p>
       <div className="item-prices">
         <div className='item-price-new'>

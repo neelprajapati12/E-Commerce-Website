@@ -12,20 +12,23 @@ const ShopCategory = (props) => {
     <div className='shopcat'>
       <img className='banner-img' src={banner} alt='/'/>
       <div className="shopcat-indexsort">
-        <p><span>Showing 1-10</span>out of 30</p>
+        <p><span>Showing 1-10 </span>out of 30</p>
         <div className="shopcat-sort">
-          Sort by <img src={dropdown} alt='/'/>
+          Sort by <img className='dropdown_img' src={dropdown} alt='/'/>
         </div>
       </div>
       <div className="shopcat-products">
         {all_products.map((item,i)=>{
           if(props.category===item.category){
-            return <Item key={i} id={item.id} title={item.title} image={item.images[0]} new_price={item.price} />
+            return <Item key={i} id={item.id} name={item.title} image={item.images[0]} new_price={item.new_price} old_price={item.old_price} />
           }
           else{
             return null;
           }
         })}
+      </div>
+      <div className="shopcat-loadmore">
+        Explore More
       </div>
     </div>
   )
