@@ -5,6 +5,7 @@ import Cart from './Pages/Cart';
 import Clothing from './Pages/Clothing';
 import Footer from './Components/Footer/Footer';
 import ShopCategory from './Pages/ShopCategory';
+import Product from './Pages/Product';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Route path='/clothing' element={<ShopCategory category="home-decoration"/>} />
         <Route path='/grocery' element={<ShopCategory category="groceries"/>} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/product' element={<Product/>}>
+          <Route path=':productId' element={<Product/>}/>
+        </Route>
       </Routes>
       <Footer/>
       </BrowserRouter>
