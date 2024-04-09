@@ -17,7 +17,11 @@
 }
 .product-img{
     width: 586px;
-    height: 700px;
+    height: 600px;
+}
+.product-main-img{
+    width: 586px;
+    height: 500px;
 }
 .productright{
     margin: 0px 70px;
