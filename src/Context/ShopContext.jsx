@@ -31,8 +31,8 @@ const ShopContextProvider=(props)=>{
                 const price =parseFloat(iteminfo.new_price.replace(/[^\d.]/g, ''))
                 totalamaount+=price * cartitems[item];
             }
-            return totalamaount;
         }
+        return totalamaount;
     }
 
     const gettotalitems=()=>{
