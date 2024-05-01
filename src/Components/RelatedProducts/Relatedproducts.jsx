@@ -6,7 +6,7 @@ import Items from '../Items/Items';
 
 const Relatedproducts = (props) => {
   const {all_products}=useContext(ShopContext);
-  const {product}=props;
+  // const {product}=props;
 
 
   return (
